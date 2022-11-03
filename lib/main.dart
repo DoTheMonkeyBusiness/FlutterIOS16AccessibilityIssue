@@ -59,10 +59,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 Semantics(
                   focusable: true,
                   sortKey: const OrdinalSortKey(0),
-                  label: "you have pushed $_counter times ",
-                  child: Text(
-                    '$_counter',
-                    style: Theme.of(context).textTheme.headline4,
+                  label: "you have pushed $_counter times",
+                  child: ExcludeSemantics(
+                    child: Text(
+                      '$_counter',
+                      style: Theme.of(context).textTheme.headline4,
+                    ),
                   ),
                 ),
               ],
