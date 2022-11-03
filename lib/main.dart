@@ -49,7 +49,6 @@ class _MyHomePageState extends State<MyHomePage> {
           focusable: true,
           container: true,
           label: "Column with elements",
-          sortKey: const OrdinalSortKey(1),
           child: SizedBox(
             height: 400,
             width: 300,
@@ -58,7 +57,6 @@ class _MyHomePageState extends State<MyHomePage> {
               children: <Widget>[
                 Semantics(
                   focusable: true,
-                  sortKey: const OrdinalSortKey(0),
                   label: "you have pushed $_counter times",
                   child: ExcludeSemantics(
                     child: Text(
